@@ -1,0 +1,13 @@
+body {
+}
+
+.block {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 25%;
+    margin-bottom: 25px;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,7 +1,3 @@
-<!-- Bootstrap Template -->
-<!-- Copyright 2012 Eric Kryski @ekryski -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,16 +17,13 @@
       .sidebar-nav {
         padding: 9px 0;
       }
+      
     </style>
     <link href="css/bootstrap-responsive-2.1.0.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
+            <link rel="stylesheet" href="style.css" type="text/css" />
+                    
     <link rel="shortcut icon" href="img/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
@@ -50,65 +43,278 @@
           <a class="brand" href="#">CPython</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Packages</a></li>
-              <li><a href="/research">Research</a></li>
-              <li><a href="/resources">Resources</a></li>
+              <li class="active"><a href="index.html">Packages</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="resources.html">Resources</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container">
 
-        <h1>CPython</h1>
+        <span class="center">
         <hr/>
-        <div class="jumbotron">
-        <!-- <img src="logo.png" class="center"> -->
-        <p class="lead">CPython Compiler Infastructure</p>
+        
+        <h1 id="cpython-compiler-tools">CPython Compiler Tools</h1>
+        <br/>
+        <div class="figure">
+        <img src="logo_med.png" /><p class="caption"></p>
         </div>
-
-        <hr>
-
-        <div class="row-fluid">
-            <h2>Parsers</h2>
+        <hr/>
+        </span>
+        <h1 id="parsers">Parsers</h1>
+        <h5 id="ply">Ply</h5>
+        <p>PLY is an implementation of lex and yacc parsing tools for Python.</p>
+        <ul>
+        <li><a href="http://dabeaz.com/ply">Website</a></li>
+        <li><a href="http://dabeaz.com/ply/ply.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">LALR(1)</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Metaprogramming</h2>
+        
+        <h5 id="pyparsing">PyParsing</h5>
+        <p>The pyparsing module is an alternative approach to creating and executing simple grammars, vs. the traditional lex/yacc approach, or the use of regular expressions. The pyparsing module provides a library of classes that client code uses to construct the grammar directly in Python code.</p>
+        <ul>
+        <li><a href="http://pyparsing.wikispaces.com/">Website</a></li>
+        <li><a href="http://pyparsing.wikispaces.com/Documentation">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">LL(1)</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Code Generation</h2>
+        
+        <h5 id="parsimonious">Parsimonious</h5>
+        <p>Parsimonious aims to be the fastest arbitrary-lookahead parser written in pure Python. It's based on parsing expression grammars (PEGs), which means you feed it a simplified sort of EBNF notation. Parsimonious was designed to undergird a MediaWiki parser that wouldn't take 5 seconds or a GB of RAM to do one page.</p>
+        <ul>
+        <li><a href="https://github.com/erikrose/parsimonious">Website</a></li>
+        <li><a href="https://github.com/erikrose/parsimonious">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">PEG</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Compilers</h2>
+        
+        <h5 id="funcparserlib">funcparserlib</h5>
+        <p>funcparserlib is a parser combinator library.</p>
+        <div class="block">
+        <span class="badge badge-success">LL(*)</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Interpreters</h2>
+        
+        <h5 id="spark">Spark</h5>
+        <p>SPARK stands for the Scanning, Parsing, and Rewriting Kit. It formerly had no name, and was referred to as the &quot;little language framework.&quot;</p>
+        <ul>
+        <li><a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">GLR</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Bytecode Utilities</h2>
+        
+        <h5 id="pypgen">pypgen</h5>
+        <!--http://nedbatchelder.com/text/python-parsers.html-->
+        
+        <div class="block">
+        <span class="badge badge-success">LL(1)</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>AST Utilities</h2>
+        
+        <h5 id="antlr">ANTLR</h5>
+        <div class="block">
+        <span class="badge badge-success">LL(1+)</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Type Utilities</h2>
+        
+        <h2 id="syntax-definition">Syntax Definition</h2>
+        <!--
+        Compiling Little Languages in Python
+        
+        http://pages.cpsc.ucalgary.ca/~aycock/spark/
+        -->
+        
+        <h5 id="asdl">ASDL</h5>
+        <p>The Zephyr Abstract Syntax Description Lanuguage (ASDL) is a language designed to describe the tree-like data structures in compilers. Its main goal is to provide a method for compiler components written in different languages to interoperate. ASDL makes it easier for applications written in a variety of programming languages to communicate complex recursive data structures.</p>
+        <ul>
+        <li><a href="http://asdl.sourceforge.net">Website</a></li>
+        </ul>
+        <h5 id="asdl_py">asdl_py</h5>
+        <ul>
+        <li><a href="https://github.com/luizribeiro/gython/blob/master/ast/asdl_py.py">Website</a></li>
+        </ul>
+        <h2 id="metaprogramming">Metaprogramming</h2>
+        <h5 id="basil">Basil</h5>
+        <h5 id="mython">Mython</h5>
+        <h5 id="cog">Cog</h5>
+        <h2 id="code-generation">Code Generation</h2>
+        <h5 id="llvmpy">LLVMPy</h5>
+        <p>llvmpy is a Python wrapper around the llvm C++ library which allows simple access to compiler tools.</p>
+        <ul>
+        <li><a href="http://www.llvmpy.org/">Website</a></li>
+        <li><a href="http://www.llvmpy.org/llvmpy-doc/0.10.2/index.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">LLVM</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Optimization and Rewriting</h2>
+        
+        <h5 id="llvm-cbuilder">llvm-cbuilder</h5>
+        <p>llvm-cbuilder is a Python DSL for constructing higher level LLVM logic.</p>
+        <ul>
+        <li><a href="https://github.com/llvmpy/llvmpy/tree/master/llvm_cbuilder">Website</a></li>
+        <li><a href="https://github.com/llvmpy/llvmpy/blob/master/README_LLVM_CBUILDER.md">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">LLVM</span>
         </div>
-
-        <div class="row-fluid">
-            <h2>Control Flow</h2>
+        
+        <h5 id="cgen">cgen</h5>
+        <p>C/C++ source generation from an AST for CUDA and OpenCL.</p>
+        <ul>
+        <li><a href="https://github.com/inducer/cgen">Website</a></li>
+        <li><a href="http://documen.tician.de/cgen/index.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">C</span> <span class="badge badge-success">C++</span>
         </div>
+        
+        <h2 id="compilers">Compilers</h2>
+        <h5 id="cython">Cython</h5>
+        <p>The Cython language is a superset of the Python language that additionally supports calling C functions and declaring C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code. The C code is generated once and then compiles with all major C/C++ compilers.</p>
+        <ul>
+        <li><a href="http://www.cython.org">Website</a></li>
+        <li><a href="http://docs.cython.org">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Target: C</span>
+        </div>
+        
+        <h5 id="theano">Theano</h5>
+        <p>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently and with transparent use of a GPU.</p>
+        <ul>
+        <li><a href="http://deeplearning.net/software/theano/">Website</a></li>
+        <li><a href="http://deeplearning.net/software/theano/#documentation">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Target: C</span> <span class="badge badge-success">Target: C++</span>
+        </div>
+        
+        <h5 id="numba">Numba</h5>
+        <div class="block">
+        <span class="badge badge-success">Target: LLVM</span>
+        </div>
+        
+        <h5 id="copperhead">Copperhead</h5>
+        <div class="block">
+        <span class="badge badge-success">Target: C++</span>
+        </div>
+        
+        <h5 id="shedskin">Shedskin</h5>
+        <div class="block">
+        <span class="badge badge-success">Target: C</span>
+        </div>
+        
+        <h5 id="parakeet">Parakeet</h5>
+        <p>Parallelizing runtime compiler for numerical Python</p>
+        <ul>
+        <li><a href="https://github.com/iskandr/parakeet">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Target: LLVM</span>
+        </div>
+        
+        <h5 id="llpython">LLPython</h5>
+        <p>The primary goal of the llpython package is to provide a Python dialect/subset that maps directly to LLVM code.</p>
+        <ul>
+        <li><a href="https://github.com/llvmpy/llvmpy/tree/master/llpython">Website</a></li>
+        <li><a href="http://www.llvmpy.org/llvmpy-doc/0.10.1/doc/llpython/index.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Target: LLVM</span>
+        </div>
+        
+        <h2 id="interpreters">Interpreters</h2>
+        <h5 id="mypy">MyPy</h5>
+        <p>The mypy programming language is an experimental Python variant that aims to combine the benefits of dynamic (or &quot;duck&quot;) typing and static typing.</p>
+        <ul>
+        <li><a href="http://www.mypy-lang.org/">Website</a></li>
+        <li><a href="http://www.mypy-lang.org/overview.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">VM: Alore</span>
+        </div>
+        
+        <h5 id="tinypy">tinypy</h5>
+        <p>TinyPy is a minimalist implementation of python in 64k of code.</p>
+        <ul>
+        <li><a href="https://code.google.com/p/tinypy/">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">VM: Custom</span>
+        </div>
+        
+        <h2 id="vms">VMs</h2>
+        <p>Peregrine-falcon is a fast Python VM.</p>
+        <ul>
+        <li><a href="https://github.com/rjpower/peregrine-falcon">Website</a></li>
+        </ul>
+        <h2 id="gpu-interfaces">GPU Interfaces</h2>
+        <h5 id="pyopencl">PyOpenCL</h5>
+        <p>PyOpenCL lets you access the OpenCL parallel computation API from Python</p>
+        <ul>
+        <li><a href="http://mathema.tician.de/software/pyopencl">Website</a></li>
+        <li><a href="http://documen.tician.de/pyopencl/">Docs</a></li>
+        </ul>
+        <h5 id="pycuda">PyCuda</h5>
+        <p>PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.</p>
+        <ul>
+        <li><a href="http://mathema.tician.de/software/pycuda">Website</a></li>
+        <li><a href="http://documen.tician.de/pycuda/">Docs</a></li>
+        </ul>
+        <h2 id="bytecode-utilities">Bytecode Utilities</h2>
+        <h5 id="bytecodeassembler">BytecodeAssembler</h5>
+        <p>BytecodeAssembler is a simple bytecode assembler module that handles most low-level bytecode generation details like jump offsets, stack size tracking, line number table generation, constant and variable name index tracking, etc. That way, you can focus your attention on the desired semantics of your bytecode instead of on these mechanical issues.</p>
+        <ul>
+        <li><a href="http://peak.telecommunity.com/DevCenter/BytecodeAssembler">Website</a></li>
+        <li><a href="http://peak.telecommunity.com/DevCenter/BytecodeAssembler#toc">Docs</a></li>
+        </ul>
+        <h5 id="byteplay">Byteplay</h5>
+        <p>Byteplay lets you convert Python code objects into equivalent objects which are easy to play with, and lets you convert those objects back into living Python code objects. It's useful for applying crazy transformations on Python functions, and is also useful in learning Python byte code intricacies.</p>
+        <ul>
+        <li><a href="https://code.google.com/p/byteplay/">Website</a></li>
+        <li><a href="http://wiki.python.org/moin/ByteplayDoc">Docs</a></li>
+        </ul>
+        <h2 id="ast-utilities">AST Utilities</h2>
+        <h5 id="meta">Meta</h5>
+        <p>A Pure Python module containing a framework to manipulate and analyze python ast's and bytecode.</p>
+        <ul>
+        <li><a href="https://github.com/srossross/Meta">Website</a></li>
+        </ul>
+        <h5 id="astoptimizer">astoptimizer</h5>
+        <p>astoptimizer is an optimizer for Python code working on the Abstract Syntax Tree (AST, high-level representration). It does as much work as possible at compile time.</p>
+        <ul>
+        <li><a href="https://bitbucket.org/haypo/astoptimizer">Website</a></li>
+        </ul>
+        <h2 id="type-utilities">Type Utilities</h2>
+        <h2 id="optimization-and-rewriting">Optimization and Rewriting</h2>
+        <h2 id="control-flow">Control Flow</h2>
+        <h2 id="static-analysis">Static Analysis</h2>
+        <h2 id="other-languages">Other Languages</h2>
+        <h5 id="lispy">Lispy</h5>
+        <p>Lispy is a Scheme Interpreter in Python</p>
+        <ul>
+        <li><a href="http://norvig.com/lispy.html">Website</a></li>
+        </ul>
+        <h5 id="bob-scheme">Bob Scheme</h5>
+        <p>Bob is a suite of implementations of the Scheme language in Python.</p>
+        <ul>
+        <li><a href="https://code.google.com/p/bobscheme/">Website</a></li>
+        </ul>
+        <h5 id="mini-c">Mini-C</h5>
+        <p>Mini-C is a compiler for a subset of the C programming language written in Python.</p>
+        <ul>
+        <li><a href="http://people.cs.uchicago.edu/~varmaa/mini_c/">Website</a></li>
+        </ul>
+        <h5 id="retroforth">Retroforth</h5>
+        <p>Retro is a concatenative, stack based language with roots in Forth</p>
+        <ul>
+        <li><a href="https://code.google.com/p/retro-language/source/browse/vm/complete/retro.py">Website</a></li>
+        </ul>
 
     </div>
 
