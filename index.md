@@ -72,7 +72,7 @@ had no name, and was referred to as the "little language framework."
 - [Website](http://pages.cpsc.ucalgary.ca/~aycock/spark/)
 
 <div class="block">
-<span class="badge badge-success">GLR</span>
+<span class="badge badge-success">Earley</span>
 </div>
 
 ##### pypgen
