@@ -1,5 +1,5 @@
 <p align="center" style="padding: 20px">
-<img src="https://raw.github.com/ContinuumIO/blaze-core/master/docs/source/svg/logo_med.png">
+<img src="https://raw.github.com/pydata/compilers-webpage/master/logo_med.png">
 </p>
 
 
