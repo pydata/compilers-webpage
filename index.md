@@ -263,6 +263,20 @@ The primary goal of the llpython package is to provide a Python dialect/subset t
 <span class="badge badge-success">Target: LLVM</span>
 </div>
 
+##### Nuitka
+
+Right now Nuitka is a good replacement for the Python interpreter and compiles every construct that 
+CPython 2.6 and 2.7 offer. It translates the Python into a C++ program that then uses "libpython" to 
+execute in the same way as CPython does, in a very compatible way. 
+
+- [Website](http://nuitka.net/pages/overview.html)
+- [Docs](http://nuitka.net/doc/user-manual.html)
+
+<div class="block">
+<span class="badge badge-success">Target: C++</span>
+</div>
+
+
 Interpreters
 ------------
 
