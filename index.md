@@ -220,8 +220,35 @@ efficiently and with transparent use of a GPU.
 
 ##### Numba
 
+Numba is a NumPy aware dynamic compiler for Python. It creates LLVM
+bit-code from Python syntax and then creates a wrapper around that
+bitcode to call from Python.
+
+- [Website](http://numba.pydata.org/numba-doc/0.6/index.html)
+- [Docs](https://github.com/numba/numba)
+
 <div class="block">
 <span class="badge badge-success">Target: LLVM</span>
+</div>
+
+##### NumbaPro
+
+NumbaPro is a proprietary Continuum Analytics product that compiles
+NumPy expressions to efficient serial and parallel code. NumbaPro can
+augment NumPy's fast vectorized operations with your own custom Python
+functions. These functions are compiled from Python expressions to
+blazing-fast native code.
+
+NumbaPro also comes with CUDA Python which enables full CUDA programming
+with Python syntax. Write your code with arrays, execute your code on
+GPUs and multiple-cores.
+
+- [Website](https://store.continuum.io/cshop/numbapro)
+- [Docs](http://docs.continuum.io/numbapro/index.html)
+
+<div class="block">
+<span class="badge badge-success">Target: LLVM</span>
+<span class="badge badge-success">Target: CUDA PTX</span>
 </div>
 
 ##### Copperhead
@@ -232,11 +259,22 @@ then dynamically compiled and executed on parallel platforms. Currently,
 Copperhead targets NVIDIA GPUs, as well as multicore CPUs through OpenMP
 and Threading Building Blocks (TBB).
 
+- [Website](http://copperhead.github.com/)
+- [Docs](http://copperhead.github.com/doc/index.html)
+
 <div class="block">
 <span class="badge badge-success">Target: C++</span>
 </div>
 
 ##### Shedskin
+
+Shed Skin is an experimental compiler, that can translate pure, but
+implicitly statically typed Python programs into optimized C++. It can
+generate stand-alone programs or extension modules that can be imported
+and used in larger Python programs.
+
+- [Website](https://code.google.com/p/shedskin/)
+- [Docs](https://code.google.com/p/shedskin/wiki/docs)
 
 <div class="block">
 <span class="badge badge-success">Target: C</span>
@@ -335,12 +373,20 @@ PyOpenCL lets you access the OpenCL parallel computation API from Python
 - [Website](http://mathema.tician.de/software/pyopencl)
 - [Docs](http://documen.tician.de/pyopencl/)
 
+<div class="block">
+<span class="badge badge-success">CUDA</span>
+</div>
+
 ##### PyCuda
 
 PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.
 
 - [Website](http://mathema.tician.de/software/pycuda)
 - [Docs](http://documen.tician.de/pycuda/)
+
+<div class="block">
+<span class="badge badge-success">OpenCL</span>
+</div>
 
 Bytecode Utilities
 ------------------

@@ -206,17 +206,42 @@
         </div>
         
         <h5 id="numba">Numba</h5>
+        <p>Numba is a NumPy aware dynamic compiler for Python. It creates LLVM bit-code from Python syntax and then creates a wrapper around that bitcode to call from Python.</p>
+        <ul>
+        <li><a href="http://numba.pydata.org/numba-doc/0.6/index.html">Website</a></li>
+        <li><a href="https://github.com/numba/numba">Docs</a></li>
+        </ul>
         <div class="block">
         <span class="badge badge-success">Target: LLVM</span>
         </div>
         
+        <h5 id="numbapro">NumbaPro</h5>
+        <p>NumbaPro is a proprietary Continuum Analytics product that compiles NumPy expressions to efficient serial and parallel code. NumbaPro can augment NumPy's fast vectorized operations with your own custom Python functions. These functions are compiled from Python expressions to blazing-fast native code.</p>
+        <p>NumbaPro also comes with CUDA Python which enables full CUDA programming with Python syntax. Write your code with arrays, execute your code on GPUs and multiple-cores.</p>
+        <ul>
+        <li><a href="https://store.continuum.io/cshop/numbapro">Website</a></li>
+        <li><a href="http://docs.continuum.io/numbapro/index.html">Docs</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Target: LLVM</span> <span class="badge badge-success">Target: CUDA PTX</span>
+        </div>
+        
         <h5 id="copperhead">Copperhead</h5>
         <p>Copperhead is a project to bring data parallelism to Python. Copperhead defines a small functional, data parallel subset of Python, which is then dynamically compiled and executed on parallel platforms. Currently, Copperhead targets NVIDIA GPUs, as well as multicore CPUs through OpenMP and Threading Building Blocks (TBB).</p>
+        <ul>
+        <li><a href="http://copperhead.github.com/">Website</a></li>
+        <li><a href="http://copperhead.github.com/doc/index.html">Docs</a></li>
+        </ul>
         <div class="block">
         <span class="badge badge-success">Target: C++</span>
         </div>
         
         <h5 id="shedskin">Shedskin</h5>
+        <p>Shed Skin is an experimental compiler, that can translate pure, but implicitly statically typed Python programs into optimized C++. It can generate stand-alone programs or extension modules that can be imported and used in larger Python programs.</p>
+        <ul>
+        <li><a href="https://code.google.com/p/shedskin/">Website</a></li>
+        <li><a href="https://code.google.com/p/shedskin/wiki/docs">Docs</a></li>
+        </ul>
         <div class="block">
         <span class="badge badge-success">Target: C</span>
         </div>
@@ -286,12 +311,20 @@
         <li><a href="http://mathema.tician.de/software/pyopencl">Website</a></li>
         <li><a href="http://documen.tician.de/pyopencl/">Docs</a></li>
         </ul>
+        <div class="block">
+        <span class="badge badge-success">CUDA</span>
+        </div>
+        
         <h5 id="pycuda">PyCuda</h5>
         <p>PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.</p>
         <ul>
         <li><a href="http://mathema.tician.de/software/pycuda">Website</a></li>
         <li><a href="http://documen.tician.de/pycuda/">Docs</a></li>
         </ul>
+        <div class="block">
+        <span class="badge badge-success">OpenCL</span>
+        </div>
+        
         <h2 id="bytecode-utilities">Bytecode Utilities</h2>
         <h5 id="bytecodeassembler">BytecodeAssembler</h5>
         <p>BytecodeAssembler is a simple bytecode assembler module that handles most low-level bytecode generation details like jump offsets, stack size tracking, line number table generation, constant and variable name index tracking, etc. That way, you can focus your attention on the desired semantics of your bytecode instead of on these mechanical issues.</p>
