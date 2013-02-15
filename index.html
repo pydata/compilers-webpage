@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Template</title>
+    <title>CPython Compilers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -114,24 +114,21 @@
         </div>
         
         <h5 id="pypgen">pypgen</h5>
-        <!--http://nedbatchelder.com/text/python-parsers.html-->
-        
+        <p>pypgen is a implemention of pgen, the parser the underlies CPython.</p>
         <div class="block">
         <span class="badge badge-success">LL(1)</span>
         </div>
         
         <h5 id="antlr">ANTLR</h5>
+        <p>ANTLR is a Java parser generator framework that can emit Python parsers.</p>
         <div class="block">
         <span class="badge badge-success">LL(1+)</span>
         </div>
         
+        <ul>
+        <li><a href="http://www.antlr.org/">Website</a></li>
+        </ul>
         <h2 id="syntax-definition">Syntax Definition</h2>
-        <!--
-        Compiling Little Languages in Python
-        
-        http://pages.cpsc.ucalgary.ca/~aycock/spark/
-        -->
-        
         <h5 id="asdl">ASDL</h5>
         <p>The Zephyr Abstract Syntax Description Lanuguage (ASDL) is a language designed to describe the tree-like data structures in compilers. Its main goal is to provide a method for compiler components written in different languages to interoperate. ASDL makes it easier for applications written in a variety of programming languages to communicate complex recursive data structures.</p>
         <ul>
@@ -203,6 +200,7 @@
         </div>
         
         <h5 id="copperhead">Copperhead</h5>
+        <p>Copperhead is a project to bring data parallelism to Python. Copperhead defines a small functional, data parallel subset of Python, which is then dynamically compiled and executed on parallel platforms. Currently, Copperhead targets NVIDIA GPUs, as well as multicore CPUs through OpenMP and Threading Building Blocks (TBB).</p>
         <div class="block">
         <span class="badge badge-success">Target: C++</span>
         </div>
@@ -252,10 +250,24 @@
         </div>
         
         <h2 id="vms">VMs</h2>
+        <h5 id="byterun">Byterun</h5>
+        <p>Byterun is a pure-Python implementation of a Python bytecode execution virtual machine.</p>
+        <ul>
+        <li><a href="https://github.com/nedbat/byterun">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Python</span>
+        </div>
+        
+        <h5 id="peregrine-falcon">peregrine-falcon</h5>
         <p>Peregrine-falcon is a fast Python VM.</p>
         <ul>
         <li><a href="https://github.com/rjpower/peregrine-falcon">Website</a></li>
         </ul>
+        <div class="block">
+        <span class="badge badge-success">C++</span>
+        </div>
+        
         <h2 id="gpu-interfaces">GPU Interfaces</h2>
         <h5 id="pyopencl">PyOpenCL</h5>
         <p>PyOpenCL lets you access the OpenCL parallel computation API from Python</p>
@@ -294,6 +306,29 @@
         <li><a href="https://bitbucket.org/haypo/astoptimizer">Website</a></li>
         </ul>
         <h2 id="type-utilities">Type Utilities</h2>
+        <h5 id="python-typelanguage">python-typelanguage</h5>
+        <p>Python-typelanguage provides a type language for communicating about Python programs and values. Humans communicating to other humans, humans communicating to the computer, and even the computer communicating to humans (via type inference and run-time contract checking).</p>
+        <ul>
+        <li><a href="https://github.com/kennknowles/python-typelanguage">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Ad-hoc</span> <span class="badge badge-success">Local inference</span>
+        </div>
+        
+        <h5 id="python-type-inference">python-type-inference</h5>
+        <p>Python-type-inference is a Hindley-Milner type inference engine for Python with an OCaml implementation.</p>
+        <div class="block">
+        <span class="badge badge-success">Ad-hoc</span> <span class="badge badge-success">Local</span>
+        </div>
+        
+        <ul>
+        <li><a href="https://code.google.com/p/python-type-inference/">Website</a></li>
+        </ul>
+        <div class="block">
+        <span class="badge badge-success">Hindley-Milner</span> <span class="badge badge-success">Global</span> <span class="badge badge-success">Local</span>
+        </div>
+        
+        <h5 id="starkiller">starkiller</h5>
         <h2 id="optimization-and-rewriting">Optimization and Rewriting</h2>
         <h2 id="control-flow">Control Flow</h2>
         <h2 id="static-analysis">Static Analysis</h2>

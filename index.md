@@ -77,7 +77,7 @@ had no name, and was referred to as the "little language framework."
 
 ##### pypgen
 
-<!--http://nedbatchelder.com/text/python-parsers.html-->
+pypgen is a implemention of pgen, the parser the underlies CPython.
 
 <div class="block">
 <span class="badge badge-success">LL(1)</span>
@@ -85,18 +85,17 @@ had no name, and was referred to as the "little language framework."
 
 ##### ANTLR
 
+ANTLR is a Java parser generator framework that can emit Python
+parsers. 
+
 <div class="block">
 <span class="badge badge-success">LL(1+)</span>
 </div>
 
+- [Website](http://www.antlr.org/)
+
 Syntax Definition
 -----------------
-
-<!--
-Compiling Little Languages in Python
-
-http://pages.cpsc.ucalgary.ca/~aycock/spark/
--->
 
 ##### ASDL
 
@@ -210,6 +209,12 @@ efficiently and with transparent use of a GPU.
 
 ##### Copperhead
 
+Copperhead is a project to bring data parallelism to Python. Copperhead
+defines a small functional, data parallel subset of Python, which is
+then dynamically compiled and executed on parallel platforms. Currently,
+Copperhead targets NVIDIA GPUs, as well as multicore CPUs through OpenMP
+and Threading Building Blocks (TBB).
+
 <div class="block">
 <span class="badge badge-success">Target: C++</span>
 </div>
@@ -268,10 +273,26 @@ TinyPy is a minimalist implementation of python in 64k of code.
 VMs
 ---
 
+##### Byterun
+
+Byterun is a pure-Python implementation of a Python bytecode execution
+virtual machine.
+
+- [Website](https://github.com/nedbat/byterun)
+
+<div class="block">
+<span class="badge badge-success">Python</span>
+</div>
+
+##### peregrine-falcon
+
 Peregrine-falcon is a fast Python VM.
 
 - [Website](https://github.com/rjpower/peregrine-falcon)
 
+<div class="block">
+<span class="badge badge-success">C++</span>
+</div>
 
 GPU Interfaces
 --------------
@@ -335,6 +356,41 @@ possible at compile time.
 
 Type Utilities
 ---------------
+
+##### python-typelanguage
+
+Python-typelanguage provides a type language for communicating about
+Python programs and values. Humans communicating to other humans, humans
+communicating to the computer, and even the computer communicating to
+humans (via type inference and run-time contract checking).
+
+
+- [Website](https://github.com/kennknowles/python-typelanguage)
+
+<div class="block">
+<span class="badge badge-success">Ad-hoc</span>
+<span class="badge badge-success">Local inference</span>
+</div>
+
+##### python-type-inference
+
+Python-type-inference is a Hindley-Milner type inference engine for
+Python with an OCaml implementation.
+
+<div class="block">
+<span class="badge badge-success">Ad-hoc</span>
+<span class="badge badge-success">Local</span>
+</div>
+
+- [Website](https://code.google.com/p/python-type-inference/)
+
+<div class="block">
+<span class="badge badge-success">Hindley-Milner</span>
+<span class="badge badge-success">Global</span>
+<span class="badge badge-success">Local</span>
+</div>
+
+##### starkiller
 
 Optimization and Rewriting
 --------------------------
