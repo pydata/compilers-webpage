@@ -77,7 +77,9 @@ had no name, and was referred to as the "little language framework."
 
 ##### pypgen
 
-pypgen is a implemention of pgen, the parser the underlies CPython.
+pypgen is a Python implemention of pgen, the parser that underlies CPython.
+
+- [Website](https://code.google.com/p/basil/wiki/PyPgen)
 
 <div class="block">
 <span class="badge badge-success">LL(1)</span>
@@ -123,12 +125,27 @@ Metaprogramming
 
 ##### Mython
 
+
+Mython is an extensible variant of the Python programming language.
+Mython makes Python extensible by adding two things: parametric
+quotation statement, and compile-time metaprogramming. The parametric
+quote statement is simply syntactic sugar for saying "run some function
+on this embedded string". Compile-time metaprogramming allows you to
+evaluate that function on the embedded string at compile time. This
+gives you added choice, both in terms of what your code looks like, and
+when you want to evaluate that code.
+
+- [Website](http://www.mython.org)
+
 ##### Cog
 
+Cog is a Python source generation library. Cog transforms files in
+a very simple way: it finds chunks of Python code embedded in them,
+executes the Python code, and inserts its output back into the original
+file. The file can contain whatever text you like around the Python
+code.
 
-
-
-
+- [Website](http://nedbatchelder.com/code/cog/)
 
 Code Generation
 ---------------
@@ -369,7 +386,7 @@ humans (via type inference and run-time contract checking).
 
 <div class="block">
 <span class="badge badge-success">Ad-hoc</span>
-<span class="badge badge-success">Local inference</span>
+<span class="badge badge-success">Local</span>
 </div>
 
 ##### python-type-inference
@@ -394,6 +411,18 @@ Python with an OCaml implementation.
 
 Optimization and Rewriting
 --------------------------
+
+##### PyRewrite
+
+Pyrewrite aims to be a small term rewrite library written in pure
+Python, it is heavily inspired by the StrategoXT project and intended
+for rewriting ATerm like expression grammars.
+
+- [Website](https://github.com/ContinuumIO/pyrewrite)
+
+<div class="block">
+<span class="badge badge-success">Strategic Combinators</span>
+</div>
 
 Control Flow
 ------------
