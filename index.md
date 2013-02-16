@@ -204,6 +204,14 @@ then compiles with all major C/C++ compilers.
 <span class="badge badge-success">Target: C</span>
 </div>
 
+##### RPython
+
+RPython is a restricted subset of Python that is amenable to static
+analysis. RPython is a core part of the PyPy compiler infastructure.
+
+- [Website](https://bitbucket.org/pypy/pypy)
+- [Docs](http://doc.pypy.org/en/latest/translation.html)
+
 ##### Theano
 
 Theano is a Python library that allows you to define, optimize, and
@@ -309,6 +317,16 @@ execute in the same way as CPython does, in a very compatible way.
 <span class="badge badge-success">Target: C++</span>
 </div>
 
+##### ocl
+
+ocl is a minimalist library that dynamically (at run time) converts
+decorated Python functions into C99, OpenCL, or JavaScript. In the
+C99 case, it also uses distutils to compile the functions to machine
+language and allow you to run the compiled ones instead of the
+interpreted ones. In the OpenCL case you can run the compiled ones using
+pyOpenCL.
+
+- [Website](https://github.com/mdipierro/ocl)
 
 Interpreters
 ------------
