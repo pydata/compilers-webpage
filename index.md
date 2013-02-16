@@ -449,11 +449,6 @@ humans (via type inference and run-time contract checking).
 Python-type-inference is a Hindley-Milner type inference engine for
 Python with an OCaml implementation.
 
-<div class="block">
-<span class="badge badge-success">Ad-hoc</span>
-<span class="badge badge-success">Local</span>
-</div>
-
 - [Website](https://code.google.com/p/python-type-inference/)
 
 <div class="block">
