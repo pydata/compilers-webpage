@@ -234,14 +234,9 @@ bitcode to call from Python.
 ##### NumbaPro
 
 NumbaPro is a proprietary Continuum Analytics product that compiles
-NumPy expressions to efficient serial and parallel code. NumbaPro can
-augment NumPy's fast vectorized operations with your own custom Python
-functions. These functions are compiled from Python expressions to
-blazing-fast native code.
-
-NumbaPro also comes with CUDA Python which enables full CUDA programming
-with Python syntax. Write your code with arrays, execute your code on
-GPUs and multiple-cores.
+NumPy expressions to native code with support for parallel execution on
+multiple cores and GPU hardware. NumbaPro also comes with CUDA Python
+which supports CUDA programming with Python syntax.
 
 - [Website](https://store.continuum.io/cshop/numbapro)
 - [Docs](http://docs.continuum.io/numbapro/index.html)
