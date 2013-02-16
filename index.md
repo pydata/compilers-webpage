@@ -328,6 +328,11 @@ pyOpenCL.
 
 - [Website](https://github.com/mdipierro/ocl)
 
+<div class="block">
+<span class="badge badge-success">Target: C</span>
+<span class="badge badge-success">Target: Javascript</span>
+</div>
+
 Interpreters
 ------------
 
