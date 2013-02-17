@@ -59,6 +59,8 @@ a GB of RAM to do one page.
 ##### funcparserlib
 
 funcparserlib is a parser combinator library.
+
+- [Website](https://code.google.com/p/funcparserlib/)
     
 <div class="block">
 <span class="badge badge-success">LL(*)</span>
@@ -90,11 +92,11 @@ pypgen is a Python implemention of pgen, the parser that underlies CPython.
 ANTLR is a Java parser generator framework that can emit Python
 parsers. 
 
+- [Website](http://www.antlr.org/)
+
 <div class="block">
 <span class="badge badge-success">LL(1+)</span>
 </div>
-
-- [Website](http://www.antlr.org/)
 
 Syntax Definition
 -----------------
@@ -203,14 +205,6 @@ then compiles with all major C/C++ compilers.
 <div class="block">
 <span class="badge badge-success">Target: C</span>
 </div>
-
-##### RPython
-
-RPython is a restricted subset of Python that is amenable to static
-analysis. RPython is a core part of the PyPy compiler infastructure.
-
-- [Website](https://bitbucket.org/pypy/pypy)
-- [Docs](http://doc.pypy.org/en/latest/translation.html)
 
 ##### Theano
 
@@ -452,6 +446,15 @@ possible at compile time.
 Type Utilities
 ---------------
 
+##### RPython
+
+RPython is a restricted subset of Python that is amenable to static
+analysis. RPython is a core part of the PyPy compiler infastructure.
+
+
+- [Website](https://bitbucket.org/pypy/pypy)
+- [Docs](http://doc.pypy.org/en/latest/translation.html)
+
 ##### python-typelanguage
 
 Python-typelanguage provides a type language for communicating about
@@ -503,6 +506,7 @@ Control Flow
 Static Analysis
 ---------------
 
+<hr/>
 
 Other Languages
 ---------------
