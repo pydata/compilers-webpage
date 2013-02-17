@@ -508,8 +508,20 @@ Static Analysis
 
 <hr/>
 
-Other Languages
----------------
+Language Tools
+--------------
+
+##### PyCParser
+
+PyCParser is a C99 compatable parser written in pure Python, capable of
+parsing C source files and C header files.
+
+- [Website](http://pypi.python.org/pypi/pycparser)
+
+Other Language Implementations
+-----------------------------
+
+<hr/>
 
 ##### Lispy
 
