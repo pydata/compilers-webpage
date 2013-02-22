@@ -511,6 +511,12 @@ Static Analysis
 Language Tools
 --------------
 
+##### bitey
+
+Bitey is a LLVM import tool and ctypes wrapper.
+
+- [Website](https://github.com/dabeaz/bitey)
+
 ##### PyCParser
 
 PyCParser is a C99 compatable parser written in pure Python, capable of
