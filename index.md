@@ -327,6 +327,18 @@ pyOpenCL.
 <span class="badge badge-success">Target: Javascript</span>
 </div>
 
+##### pythran
+
+Pythran is a python to c++ compiler for a subset of the python language. It
+takes a python module annotated with a few interface description and turns it
+into a native python module with the same interface, but (hopefully) faster.
+
+- [Website](http://pythonhosted.org/pythran/)
+
+<div class="block">
+<span class="badge badge-success">Target: C++11</span>
+</div>
+
 Interpreters
 ------------
 
