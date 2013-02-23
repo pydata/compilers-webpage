@@ -470,6 +470,11 @@ Unwind provides a universal disassembler that is able to disassemble
 
 AST Utilities
 -------------
+##### codegen.py
+
+codegen.py is a small script to translate Python AST to Python source.
+
+- [Website](http://eli.thegreenplace.net/wp-content/uploads/2009/11/codegen.py)
 
 ##### Meta
 
@@ -564,7 +569,7 @@ Bitey is a LLVM import tool and ctypes wrapper.
 nobitey is a tool to load LLVM compiled bitcode and autogenerate a
 ctypes binding.
 
-- [Website](https://github.com/llvmpy/llvmpy/blob/master/llpython/nobitey.py])
+- [Website](https://github.com/llvmpy/llvmpy/blob/master/llpython/nobitey.py)
 
 ##### PyCParser
 
