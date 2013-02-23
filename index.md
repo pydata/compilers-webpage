@@ -438,6 +438,13 @@ Python byte code intricacies.
 - [Website](https://code.google.com/p/byteplay/)
 - [Docs](http://wiki.python.org/moin/ByteplayDoc)
 
+##### Unwind
+
+Unwind provides a universal disassembler that is able to disassemble
+*.pyc files from both Python 2 and Python 3.
+
+- [Website](https://github.com/evanw/unwind)
+
 AST Utilities
 -------------
 

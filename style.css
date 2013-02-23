@@ -1,6 +1,10 @@
 body {
 }
 
+html {
+    overflow-y: scroll;
+}
+
 .block {
     border: 1px solid #ccc;
     padding: 5px;

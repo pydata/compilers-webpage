@@ -9,7 +9,11 @@ Direct Research
 
 - "Python Type-Inference based LINT (pylint.py)"; David Jeske; 1999-11-21.
 
+- "A Peephole Optimizer for Python" Skip Montanaro. Proceedings of the 7th International Python Conference, 1998
+    * http://www.python.org/workshops/1998-11/proceedings/papers/montanaro/montanaro.html
+
 - M Salib, “Starkiller: A static type inferencer and compiler for Python” (2004)
+    * http://mike.salib.com/writings/thesis/
     * http://people.csail.mit.edu/jrb/Projects/starkiller.pdf
     * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.95.3786&rep=rep1&type=pdf
 
