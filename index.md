@@ -87,6 +87,14 @@ pypgen is a Python implemention of pgen, the parser that underlies CPython.
 <span class="badge badge-success">LL(1)</span>
 </div>
 
+##### pgenmodule.c
+
+Much like the parser module exposes the Python parser, this pgenmodule.c
+exposes the parser generator used to create the Python parser, pgen, to
+Python iteslf. Proposed in PEP 269.
+
+- [Website](https://code.google.com/p/basil/source/browse/trunk/basil/parsing/pgenmodule.c)
+
 ##### ANTLR
 
 ANTLR is a Java parser generator framework that can emit Python
@@ -182,6 +190,21 @@ C/C++ source generation from an AST for CUDA and OpenCL.
 
 - [Website](https://github.com/inducer/cgen)
 - [Docs](http://documen.tician.de/cgen/index.html)
+
+<div class="block">
+<span class="badge badge-success">C</span>
+<span class="badge badge-success">C++</span>
+</div>
+
+##### CodePy
+
+CodePy is a C/C++ metaprogramming toolkit for Python. It handles two
+aspects of native-code metaprogramming, Generating C/C++ source code and
+Compiling this source code and dynamically loading it into the Python
+interpreter.
+
+- [Website](https://github.com/inducer/codepy)
+- [Docs](http://documen.tician.de/codepy/index.html)
 
 <div class="block">
 <span class="badge badge-success">C</span>
@@ -535,6 +558,13 @@ Language Tools
 Bitey is a LLVM import tool and ctypes wrapper.
 
 - [Website](https://github.com/dabeaz/bitey)
+
+##### nobitey
+
+nobitey is a tool to load LLVM compiled bitcode and autogenerate a
+ctypes binding.
+
+- [Website](https://github.com/llvmpy/llvmpy/blob/master/llpython/nobitey.py])
 
 ##### PyCParser
 
