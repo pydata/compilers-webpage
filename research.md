@@ -1,9 +1,11 @@
 Direct Research
 ---------------
 
+- J. Aycock. Compiling Little Languages in Python. Proceedings of the 7th International Python Conference, 1998, pp. 69-77.
+
 - J. Riehl. PyFront: Conversion of Python to C Extension Modules. Proceedings of the 7th International Python Conference, 1998, pp. 79-90.
 
-- J. Aycock. Compiling Little Languages in Python. Proceedings of the 7th International Python Conference, 1998, pp. 69-77.
+- Rigo, Armin. "Representation-based just-in-time specialization and the psyco prototype for python." Proceedings of the 2004 ACM SIGPLAN symposium on Partial evaluation and semantics-based program manipulation. ACM, 2004.
 
 - "Aggressive type inference"; John Aycock; Department of Computer Science, University of Victoria, Canada; 1999-11-23.
 
@@ -18,6 +20,18 @@ Direct Research
     * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.95.3786&rep=rep1&type=pdf
 
 - R. E. Masse. Evolutionary Prototyping: ``Add Later'' Static Types for Python. Proceedings of the 7th International Python Conference, 1998, pp. 91-101.
+
+- Aycock, John. "Converting Python virtual machine code to C." Proceedings of the 7th International Python Conference. 1998.
+
+- Ancona, Davide, et al. "RPython: a step towards reconciling dynamically and statically typed OO languages." Proceedings of the 2007 symposium on Dynamic languages. ACM, 2007.
+
+- Bolz, Carl Friedrich, et al. "Runtime feedback in a meta-tracing JIT for efficient dynamic languages." Proceedings of the 6th Workshop on Implementation, Compilation, Optimization of Object-Oriented Languages, Programs and Systems. ACM, 2011.
+
+- Cannon, Brett. Localized type inference of atomic types in python. Diss. California Polytechnic State University, 2005.
+
+- Montanaro, Skip, and N. Y. Rexford. "A peephole optimizer for python." 7th International Python Conference. 1998.
+
+- Cuni, Antonio, and Dott Davide Ancona. "Towards a More Effective Implementation of Python on Top of Statically Typed Virtual Machines." (2007).
 
 Indirect Research
 -----------------
@@ -54,3 +68,5 @@ Indirect Research
 - R. Hindley. The Principal Type-Scheme of an Object in Combinatory Logic. Transactions of the American Mathematical Society 146 (December 1969), pp. 29-60.
 
 - T. C. Miller. Type Checking in an Imperfect World. Proceedings of the Sixth ACM POPL, 1979, pp. 237-243.
+
+- Aycock, John. "The design and implementation of SPARK, a toolkit for implementing domain-specific languages." Journal of Computing and Information Technology 10.1 (2004): 55-66.
