@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CPython Compilers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap-2.1.0.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      
+    </style>
+    <link href="css/bootstrap-responsive-2.1.0.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+            <link rel="stylesheet" href="style.css" type="text/css" />
+                    
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <a href="https://github.com/pydata/compilers-webpage"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1040" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">CPython</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Packages</a></li>
+              <li class="active"><a href="research.html">Research</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        <h2 id="direct-research">Direct Research</h2>
+        <ul>
+        <li><p>J. Riehl. PyFront: Conversion of Python to C Extension Modules. Proceedings of the 7th International Python Conference, 1998, pp. 79-90.</p></li>
+        <li><p>J. Aycock. Compiling Little Languages in Python. Proceedings of the 7th International Python Conference, 1998, pp. 69-77.</p></li>
+        <li><p>&quot;Aggressive type inference&quot;; John Aycock; Department of Computer Science, University of Victoria, Canada; 1999-11-23.</p></li>
+        <li><p>&quot;Python Type-Inference based LINT (pylint.py)&quot;; David Jeske; 1999-11-21.</p></li>
+        <li>M Salib, “Starkiller: A static type inferencer and compiler for Python” (2004)
+        <ul>
+        <li>http://people.csail.mit.edu/jrb/Projects/starkiller.pdf</li>
+        <li>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.95.3786&amp;rep=rep1&amp;type=pdf</li>
+        </ul></li>
+        <li><p>R. E. Masse. Evolutionary Prototyping: ``Add Later'' Static Types for Python. Proceedings of the 7th International Python Conference, 1998, pp. 91-101.</p></li>
+        </ul>
+        <h2 id="indirect-research">Indirect Research</h2>
+        <ul>
+        <li><p>A. Aiken and B. Murphy. Static type inference in a dynamically typed language. Proceedings of the 18th ACM POPL, 1991, pp. 279-290.</p></li>
+        <li><p>Gradual Typing for Objects by Jeremy Siek and Walid Taha. ECOOP 2007.</p></li>
+        <li>Reps, T., Horwitz, S., and Sagiv, M., Precise interprocedural dataflow analysis via graph reachability. POPL 1995
+        <ul>
+        <li>http://www.cs.wisc.edu/wpis/papers/popl95.pdf</li>
+        </ul></li>
+        <li>Simon Holm Jensen, Anders Møller, Peter Thiemann. “Interprocedural Analysis with Lazy Propagation”. SAS 2010.
+        <ul>
+        <li>http://dx.doi.org/10.1007/978-3-642-15769-1_20</li>
+        <li>http://www.daimi.au.dk/~amoeller/papers/lazy/paper.pdf</li>
+        </ul></li>
+        <li>Dimitrios Vardoulakis and Olin Shivers. CFA2: a Context-Free Approach to Control-Flow Analysis. ESOP 2010
+        <ul>
+        <li>http://www.ccs.neu.edu/home/dimvar/papers/cfa2-NU-CCIS-10-01.pdf</li>
+        <li>Slides: http://www.ccs.neu.edu/home/dimvar/papers/cfa2-esop-slides.pdf</li>
+        </ul></li>
+        <li>Ole Agesen, &quot;The Cartesian Product Algorithm : Simple and Precise Type Inference of Parametric Polymorphism&quot; ECOOP’95
+        <ul>
+        <li>http://labs.oracle.com/self/papers/cpa.ps.gz</li>
+        </ul></li>
+        <li>Steve Hano, &quot;Type Inference Using the Cartesian Product Algorithm on a Dynamically Typed Language&quot;
+        <ul>
+        <li>http://stevehanov.ca/cs744_type_inference_project.pdf</li>
+        </ul></li>
+        <li><p>&quot;Gradual typing with unification based inference&quot; Jeremy Siek and Manish Vachharajani. DLS 2008.</p></li>
+        <li><p>&quot;Type reconstruction for general refinement types&quot; Kenneth Knowles &amp; Cormac Flanagan. ESOP 2007.</p></li>
+        <li><p>&quot;The ins and outs of of gradual type inference&quot; Aseem Rastogi, Avik Chaudhuri, and Basil Hosmer. POPL 2012.</p></li>
+        <li><p>R. Cartwright and M. Fagan. Soft Typing. Proceedings of the ACM PLDI '91 Conference, 1991, pp. 278-292.</p></li>
+        <li><p>R. Hindley. The Principal Type-Scheme of an Object in Combinatory Logic. Transactions of the American Mathematical Society 146 (December 1969), pp. 29-60.</p></li>
+        <li><p>T. C. Miller. Type Checking in an Imperfect World. Proceedings of the Sixth ACM POPL, 1979, pp. 237-243.</p></li>
+        </ul>
+
+    </div>
+
+    <script type="text/javascript" src="js/lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-2.1.0.min.js"></script>
+  </body>
+</html>

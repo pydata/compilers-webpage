@@ -8,4 +8,4 @@ STYLE = style.css
 %.html: %.md page.tmpl style.css Makefile
 	$(PANDOC) -c $(STYLE) --template $(TEMPLATE) -s -f $(IFORMAT) -t $(OFORMAT) $(FLAGS) -o $@ $<
 
-all: index.html resources.html
+all: index.html resources.html research.html
