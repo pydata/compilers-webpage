@@ -239,8 +239,8 @@ efficiently and with transparent use of a GPU.
 - [Docs](http://deeplearning.net/software/theano/#documentation)
 
 <div class="block">
-<span class="badge badge-success">Target: C</span>
 <span class="badge badge-success">Target: C++</span>
+<span class="badge badge-success">Target: CUDA</span>
 </div>
 
 ##### Numba
