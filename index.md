@@ -77,11 +77,14 @@ had no name, and was referred to as the "little language framework."
 <span class="badge badge-success">Earley</span>
 </div>
 
-##### pypgen
+##### pgen2
 
-pypgen is a Python implemention of pgen, the parser that underlies CPython.
+pgen2 is a pure Python implementation of the Python
+parser generator, pgen. It forms the basis for
+[Mython](https://github.com/mythonlang/mython), the extensible variant
+of the Python programming language.
 
-- [Website](https://code.google.com/p/basil/wiki/PyPgen)
+- [Website](https://github.com/mythonlang/pgen2)
 
 <div class="block">
 <span class="badge badge-success">LL(1)</span>
@@ -131,10 +134,7 @@ communicate complex recursive data structures.
 Metaprogramming
 ---------------
 
-##### Basil
-
 ##### Mython
-
 
 Mython is an extensible variant of the Python programming language.
 Mython makes Python extensible by adding two things: parametric
@@ -146,6 +146,14 @@ gives you added choice, both in terms of what your code looks like, and
 when you want to evaluate that code.
 
 - [Website](http://www.mython.org)
+- [Source](https://github.com/mythonlang/mython)
+
+
+##### Basil
+
+Basil is a metaprogramming framework and playground for Python variants.
+
+- [Website](https://code.google.com/p/basil/)
 
 ##### Cog
 

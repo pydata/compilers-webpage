@@ -33,6 +33,9 @@ Direct Research
 
 - Cuni, Antonio, and Dott Davide Ancona. "Towards a More Effective Implementation of Python on Top of Statically Typed Virtual Machines." (2007).
 
+- Vitousek, Michael M., Shashank Bharadwaj, and Jeremy G. Siek. "Towards Gradual Typing in Jython."
+    *  http://csel.cs.colorado.edu/~mivi2269/stop12/presentation.pdf
+
 Indirect Research
 -----------------
 
