@@ -384,6 +384,18 @@ The mypy programming language is an experimental Python variant that aims to com
 <span class="badge badge-success">VM: Alore</span>
 </div>
 
+##### PyPy
+
+PyPy is a fast, compliant alternative implementation of the Python
+language supporting a variety of language extensions and code generation
+paths.
+
+<div class="block">
+<span class="badge badge-success">VM: PyPy runtime</span>
+</div>
+
+- [Website](http://pypy.org/)
+
 ##### tinypy
 
 TinyPy is a minimalist implementation of python in 64k of code.
@@ -476,6 +488,13 @@ Unwind provides a universal disassembler that is able to disassemble
 
 - [Website](https://github.com/evanw/unwind)
 
+##### Maynard
+
+Maynard is a Python bytecode dissasembler/assembler as well as a
+variety of utilities for working with python by
+
+- [Source](https://bitbucket.org/larry/maynard)
+
 AST Utilities
 -------------
 ##### codegen.py
@@ -555,13 +574,36 @@ for rewriting ATerm like expression grammars.
 <span class="badge badge-success">Strategic Combinators</span>
 </div>
 
+##### strategies
+
+Strategies is a library for control flow programming with higher order
+functions that loosely resembles the Stratego language.
+
+- [Website](https://github.com/logpy/strategies)
+
+<div class="block">
+<span class="badge badge-success">Strategic Combinators</span>
+</div>
+
 Control Flow
 ------------
+
+LLPython has 0-CFA analysis for a subset of Python bytecode.
+
+<div class="block">
+<span class="badge badge-success">0-CFA</span>
+</div>
+
+- [Website](https://github.com/llvmpy/llvmpy/blob/master/llpython/byte_control.py#L13)
 
 Static Analysis
 ---------------
 
-<hr/>
+##### PyLint
+
+Pylint is a Python static checker.
+
+- [Website](https://pypi.python.org/pypi/pylint)
 
 Language Tools
 --------------
@@ -585,6 +627,14 @@ PyCParser is a C99 compatable parser written in pure Python, capable of
 parsing C source files and C header files.
 
 - [Website](http://pypi.python.org/pypi/pycparser)
+
+##### Six
+
+Six is a Python 2-3 compatability layer that offers a variety of
+compatability mappings for language level features including AST
+,parsing, and bytecode.
+
+- [Website](http://pythonhosted.org/six/#syntax-compatibility)
 
 Other Language Implementations
 -----------------------------
