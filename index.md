@@ -420,11 +420,13 @@ virtual machine.
 <span class="badge badge-success">Python</span>
 </div>
 
-##### peregrine-falcon
+##### falcon
 
-Peregrine-falcon is a fast Python VM.
+Falcon is an extension module for Python which implements a
+optimized, register machine based interpreter, inside of your
+interpreter. 
 
-- [Website](https://github.com/rjpower/peregrine-falcon)
+- [Website](https://github.com/rjpower/falcon)
 
 <div class="block">
 <span class="badge badge-success">C++</span>
