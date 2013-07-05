@@ -310,7 +310,10 @@ and used in larger Python programs.
 
 ##### Parakeet
 
-Parallelizing runtime compiler for numerical Python 
+Parakeet is a runtime compiler for numerical Python. 
+It creates specialized versions of a function for distinct input types and 
+translates array expressions and NumPy library calls into data parallel operators. 
+The current backend uses LLVM but GPU support is in the works. 
 
 - [Website](https://github.com/iskandr/parakeet)
 
